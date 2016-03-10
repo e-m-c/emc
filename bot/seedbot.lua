@@ -227,29 +227,15 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {187769689},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
-An advanced administration bot based on TG-CLI written in Lua
-
-https://github.com/SEEDTEAM/TeleSeed
-
+    about_text = [[mega emc
 Admins
-@Empero [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+@mr_bangi
+@shahabambesik
+@can_3er[Admin]
+Our channel
+@emcch [persian|eng]
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -322,17 +308,6 @@ Only sudo users can run this command
 !bc [group_id] [text]
 !bc 123456789 Hello !
 This command will send text to [group_id]
-
-
-**You can use "#", "!", or "/" to begin all commands
-
-
-*Only admins and sudo can add bots in group
-
-
-*Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
 Commands list :
@@ -451,17 +426,6 @@ Returns group logs
 
 !banlist
 will return group ban list
-
-**You can use "#", "!", or "/" to begin all commands
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
 ]],
 	help_text_super =[[
 SuperGroup Commands:
@@ -593,17 +557,6 @@ Returns users name and id by username
 
 !log
 Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
-
-**You can use "#", "!", or "/" to begin all commands
-
-*Only owner can add members to SuperGroup
-(use invite link to invite)
-
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-
-*Only owner can use res, setowner, promote, demote, and log commands
-
 ]],
   }
   serialize_to_file(config, './data/config.lua')
